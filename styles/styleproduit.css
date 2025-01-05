@@ -1,0 +1,122 @@
+/* --- Global Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f470;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Header --- */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.menuPrincipal {
+    margin: 0;
+}
+
+nav.menuPrincipal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+/* --- Main Section --- */
+main {
+    padding: 20px;
+}
+
+/* --- Product Container --- */
+.produit-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+/* --- Product Card --- */
+.produit-card {
+    background-color: rgba(255, 255, 255, 0.884);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.produit-card:hover {
+    transform: scale(1.05);
+}
+
+.produit-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.produit-nom {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.produit-description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.produit-details {
+    margin: 10px 0;
+}
+
+.producteur,
+.categorie {
+    font-size: 14px;
+    color: #555;
+}
+
+/* --- Buttons --- */
+.produit-actions {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #9daf4c;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.btn-ajouter {
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-retirer {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+}

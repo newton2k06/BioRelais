@@ -1,0 +1,301 @@
+
+html, body {
+  font-family: sans-serif;
+  /*background-image: url('../images/biorelais.png'); /* Si tu veux ajouter une image en arrière-plan */
+  
+}
+
+
+.conteneur{
+	margin: 0px;
+	padding: 0px;
+	width: 50%;
+	font-size: 0px;
+}
+.arriereplan{
+  
+  background:  url("../images/biorelais.png");
+
+}
+
+.arriereplan{
+	
+ background-size: auto;
+
+
+}
+
+
+
+
+
+
+
+/****************************************************/
+/*styles pour le menu principal                     */
+/****************************************************/
+nav.menuPrincipal {
+    position: fixed;
+    bottom: 0;  /* Placer le menu en bas de l'écran */
+    right: 0;   /* Placer le menu à droite de l'écran */
+    background-color: rgb(184, 223, 14);
+    font-size: 0px;
+    z-index: 20;  /* Assurez-vous que le menu soit au-dessus des autres éléments */
+}
+
+nav.menuPrincipal ul {
+    display: inline;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+nav.menuPrincipal ul li {
+    display: inline-block;  /* Utilisation de inline-block pour que les éléments soient sur une ligne */
+    text-align: center;
+    width: 140px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav.menuPrincipal ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav.menuPrincipal ul li a:hover {
+    color: grey;
+}
+
+nav.menuPrincipal ul li.actif {
+    background-color: ivory;
+    color: black;
+    padding: 10px;
+}
+
+nav.menuPrincipal{
+	text-align: right;
+	background-color: rgb(199, 238, 25);
+	font-size: 0px;
+}
+
+nav.menuPrincipal ul {
+	display:  inline;
+	list-style: none;
+	padding: 0px;
+ 	margin: 0px;
+	font-family: Helvetica; 
+}
+
+nav.menuPrincipal ul li {
+	display: table-cell;
+	text-align: center;
+	width: 140px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+nav.menuPrincipal ul li a {
+  text-decoration: none;
+  color: white; 
+}
+
+nav.menuPrincipal ul li a:hover {
+  color: grey;
+}
+
+nav.menuPrincipal ul li.actif {
+  	background-color: ivory;
+  	color: black;
+  	padding: 10px;
+}
+/*POUR MA CONEXION */
+
+/* Réduction de l'espace blanc et centrage */
+
+  /* Conteneur pour centrer la connexion */
+  .conteneur {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  /* Section de la page avec le formulaire */
+  .contentConnexion {
+	text-align: center;
+	padding-top: 50px; /* Réduction de l'espace blanc en haut */
+	padding-bottom: 50px; /* Réduction de l'espace blanc en bas */
+	width: 100%;
+	max-width: 500px;
+	background-color: #999494; /* Couleur de fond */
+	background-size: cover; /* S'adapte à la taille de l'écran */
+	background-position: center; /* Centrer l'image */
+	border-radius: 8px;
+  }
+  
+  /* Formulaire de connexion */
+  .connexion {
+	display: inline-block;
+	font-size: 15px;
+	width: 100%;
+	max-width: 400px;  /* Limite la largeur du formulaire */
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	z-index: 10; /* Mettre le formulaire au-dessus de l'arrière-plan */
+  }
+  
+  /* Titre du formulaire */
+  .connexion .titre {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: rgb(181, 233, 59);
+	padding: 16px;
+	margin-bottom: 20px;
+  }
+  
+  /* Champs de formulaire */
+  .connexion .ligne {
+	padding: 14px;
+	text-align: center;
+  }
+  
+  .connexion .ligne label {
+	display: inline-block;
+	width: 150px;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: bold;
+  }
+  
+  .connexion .ligne input {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+	margin-top: 5px;
+  }
+  
+  /* Bouton de soumission */
+  .connexion .ligne input[type="submit"] {
+	display: inline-block;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: rgb(181, 233, 59);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	margin-top: 20px;
+  }
+  
+  .connexion .ligne input[type="submit"]:hover {
+	background-color: #4CAF50; /* Effet de survol */
+  }
+  
+  /* Message d'erreur */
+  .connexion .ligne label.message {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	margin-top: 10px;
+  }
+  
+
+/* Styles pour le conteneur principal de la page */
+.conteneurInscription {
+    margin-top: 70px; /* Espacement pour le menu fixe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Hauteur de la fenêtre moins la hauteur du menu */
+    background: url("../images/biorelais.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Contenu principal de l'inscription */
+.contentInscription {
+    text-align: center;
+    width: 100%;
+    max-width: 600px; /* Limite la largeur du formulaire */
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour un meilleur contraste */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Titre de la section Inscription */
+.titreInscription {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(181, 233, 59);
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulaire d'inscription */
+.inscription {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section du formulaire */
+.inscription .ligne {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inscription .ligne label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.inscription .ligne input {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.inscription .ligne input[type="submit"] {
+    background-color: rgb(181, 233, 59);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.inscription .ligne input[type="submit"]:hover {
+    background-color: #4CAF50;
+}
+
+/* Message d'erreur */
+.inscription .ligne label.message {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}

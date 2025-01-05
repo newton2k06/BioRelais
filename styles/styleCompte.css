@@ -1,0 +1,83 @@
+/* Style global pour le formulaire */
+.formUtilisateur {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Conteneur pour chaque ligne de formulaire */
+.formUtilisateur .ligne {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Style des labels */
+.formUtilisateur label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Style des champs de texte */
+.formUtilisateur input[type="text"],
+.formUtilisateur input[type="password"],
+.formUtilisateur input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Placeholder des champs de texte */
+.formUtilisateur input[type="text"]::placeholder,
+.formUtilisateur input[type="password"]::placeholder,
+.formUtilisateur input[type="email"]::placeholder {
+    font-style: italic;
+    color: #999;
+}
+
+/* Style du bouton de soumission */
+.formUtilisateur input[type="submit"] {
+    background-color: #4CAF50;
+    color: rgba(151, 241, 5, 0.5);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: auto;
+    margin-top: 10px;
+}
+
+.formUtilisateur input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style pour les boutons de suppression */
+.formUtilisateur input[name="supprimerCompte"] {
+    background-color: #f44336;
+}
+
+.formUtilisateur input[name="supprimerCompte"]:hover {
+    background-color: #e53935;
+}
+
+/* Message après l'envoi ou suppression */
+.message {
+    color: #d9534f;
+    margin-top: 15px;
+}
+
+/* Style pour la ligne contenant les boutons */
+.formUtilisateur .ligne:last-child {
+    display: flex;
+    justify-content: space-between;
+}

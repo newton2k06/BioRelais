@@ -1,0 +1,122 @@
+/* Style global pour le panier */
+body {
+    font-family: Arial, sans-serif;
+    /*background-color: #f4f4f4;*/
+    margin: 0;
+    padding: 0;
+}
+
+/* Section du panier */
+.panier {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du panier */
+.panier-titre {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Affichage des produits dans le panier */
+.panier-produit {
+    background-color: #fafafa86;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Détails du produit */
+.produit-details p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #000000;
+}
+
+/* Détails du produit en gras */
+.produit-details p strong {
+    color: #000000;
+}
+
+/* Si le panier est vide */
+.empty-cart {
+    text-align: center;
+    font-size: 18px;
+    color: #f44336;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Total du panier */
+.panier-total {
+    background-color: #b9b4b4;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Affichage du total avec un style vert */
+.total {
+    color: #4CAF50;
+}
+/* Style du bouton "Supprimer et ajouter à la commande" */
+.btn-supprimer {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-supprimer:hover {
+    background-color: #E64A19;
+}
+.btn-valider{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #FF5722;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+.panier-valider .btn-valider {
+    background-color: #28a745 !important; /* Couleur verte pour attirer l'attention */
+    color: white !important; /* Texte blanc */
+    padding: 15px 30px !important; /* Taille du bouton pour le rendre plus large */
+    font-size: 18px !important; /* Taille de texte plus grande */
+    font-weight: bold !important; /* Texte en gras */
+    border-radius: 5px !important; /* Coins arrondis */
+    border: none !important; /* Pas de bordure */
+    text-align: center !important; /* Centrer le texte */
+    text-decoration: none !important; /* Enlever les soulignements */
+    transition: background-color 0.3s ease, transform 0.3s ease !important; /* Animation au survol */
+    display: inline-block !important; /* S'assurer que le lien est comme un bouton */
+}
+
+.panier-valider .btn-valider:hover {
+    background-color: #218838 !important; /* Changer la couleur au survol */
+    transform: scale(1.05) !important; /* Agrandir légèrement le bouton */
+}
+
+.panier-valider .btn-valider:active {
+    transform: scale(0.98) !important; /* Réduire légèrement quand on clique */
+}
