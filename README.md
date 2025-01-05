@@ -1,5 +1,6 @@
 # Biorelais
-
+site pour gerer la production 
+et les achat et les commande pour des produit bio
 
 
 ## Getting started
